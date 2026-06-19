@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rushikagolla-alt/autosuggestt/issues"
   },
-  "homepage": "https://github.com/rushikagolla-alt/autosuggestt#readme"
+  "homepage": "https://github.com/rushikagolla-alt/autosuggestt#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
