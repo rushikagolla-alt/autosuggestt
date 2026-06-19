@@ -1,0 +1,19 @@
+{
+  "name": "autosuggestt-1",
+  "version": "1.0.0",
+  "description": "verifying my git set_up; )",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushikagolla-alt/autosuggestt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushikagolla-alt/autosuggestt/issues"
+  },
+  "homepage": "https://github.com/rushikagolla-alt/autosuggestt#readme"
+}
