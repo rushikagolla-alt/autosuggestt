@@ -1,21 +1,23 @@
-var user=[
+var users=[
     {
-        "name":"john doe",
+        "name":"John doe",
         "gender":"male",
-        "image":"../images/john.png"
+        "image":"/images/john.png"
     },
     {
-        "name":"jane doe",
+        "name":"Jane doe",
         "gender":"female",
-        "image":"../images/jane.png"
+        "image":"/images/jane.png"
     }
 ]
+var curId=0;
 
-var curid=0;
 function toggle(){
-     curid=(curid+1)%2;
-     var user=users[curid];
-     document.getElementById("userimage").src=user.image;
-     document.getElementById("username").innerText=user.name;
-     document.getElementById("usergender").innerText=user.gender;
+    curId=(curId+1)%2;
+    var user=users[ curId ];
+    document.getElementById("user-img").src=user.image;
+
+    document.getElementById("user-name").innerText=user.name;
+
+    document.getElementById("user-gemder").innerText=user.gender;
 }

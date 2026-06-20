@@ -1,15 +1,18 @@
-function showrandomuser() {
-})
+function randomuser() {
+    fetch("https://randomuser.me/api/")
+    .then(function(res) {
+     return res.json();
+    })
+    .then(function(data) {
+     var user = data.results[0];
+     var fullname = user.name.title + " " + user.name.first + " " + user.name.last;
+     document.getElementById("user-img").src=user.picture.large;
 
-    
-    .then(function(data){
-        var user = data.results[0];
-        var name = user.name.title + " " + user.name.first + " "+ user.name.last;
-        var gender = user.gender;
-        var image = user.picture.large;
-     document.getElementById("userimage").src=image;
-     document.getElementById("username").textContent=name;
-     document.getElementById("usergender").textContent=gender;
-    });
+    document.getElementById("user-name").innerText=fullname;
+
+    document.getElementById("user-gender").innerText=user.gender;
+    })
+    .catch(function(err){
+        console.log("Error " +err);
+    })
 }
-   
