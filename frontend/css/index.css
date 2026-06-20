@@ -16,17 +16,17 @@ h1 {
      text-align: center;
 }
 .navbar{
-     border: 4px;
+     border: 4px bisque;
      border-style: solid;
      border-color: black;
-     padding: 15px;
+     padding: 10px;
      background-color: beige;
      text-align:center ;
 }
 
 .navbar a {
      color: brown;
-     padding: 15px;
+     padding: 10px;
      text-decoration: none;
 }
 
@@ -44,9 +44,13 @@ body{
      width: 300px;
      text-align:center ;
      margin-top: 30px;
-     margin-left: 40px;
+     margin:auto;
 }
 
 .card img{
      width: 100%;
+     text-align: center;
+}
+.card button {
+     margin-bottom: 20px;
 }
